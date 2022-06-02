@@ -61,41 +61,7 @@ public class BlockChain {
 
         System.out.println("\nBlockChain is Valid: " + isChainValid());
 
-        // simple blockchain implmentation
-        {
-//        // Test public and private keys
-//        System.out.println(StringUtility.getStringFromKey(walletA.privateKey));
-//        System.out.println(StringUtility.getStringFromKey(walletA.publicKey));
-//
-//        Transaction tran = new Transaction(walletA.publicKey, walletB.publicKey, 20, null);
-//        tran.generateSignature(walletA.privateKey);
-//
-//        System.out.println(tran.verifySignature());
-
-
-//        // Adding blocks to the blockChain
-//
-//        blockChain.add(new Block("Hi this is first block", "0"));
-//        System.out.println("Trying to Mine Block 1... ");
-//        blockChain.get(0).mineBlock(difficulty);
-//
-//        blockChain.add(new Block("this is second block", blockChain.get(blockChain.size() - 1).hash));
-//        System.out.println("Trying to Mine Block 2... ");
-//        blockChain.get(1).mineBlock(difficulty);
-//
-//        blockChain.add(new Block("this is third block", blockChain.get(blockChain.size() - 1).hash));
-//        System.out.println("Trying to Mine Block 3... ");
-//        blockChain.get(2).mineBlock(difficulty);
-//
-////        blockChain.get(0).hash = "sas";
-//
-//        System.out.println("\nBlockChain is Valid: " + isChainValid());
-//
-//        String blockChainJson = new GsonBuilder().setPrettyPrinting().create().toJson(blockChain);
-//        System.out.println("\nThe BlockChain: ");
-//        System.out.println(blockChainJson);
-        }
-    }
+       
 
     public static boolean isChainValid() throws UnsupportedEncodingException, NoSuchAlgorithmException, SignatureException, NoSuchProviderException, InvalidKeyException {
         Block currentBlock;
